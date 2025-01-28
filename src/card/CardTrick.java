@@ -63,15 +63,16 @@ public class CardTrick {
         boolean luckyFound = false;
         for(Card c: magicHand){
             if(c.getValue()== luckyCard.getValue() && c.getSuit().equalsIgnoreCase(luckyCard.getSuit())){
-                found=true;
+                luckyFound=true;
                 break;
+            }
+         
         }
-         if(luckyFound){
+        if(luckyFound){
             System.out.println("You found your card is in agic Hand");
         }
         else{
           System.out.println("NO! Your card is not in magic hand");
-
+        }
     }
-    
 }
